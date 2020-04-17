@@ -5,12 +5,17 @@ x = 1:0.1:10; y = sin.(x);
 plot(x, y)
 
 ##
+using Plots
+x = LinRange(-2, 2, 150)
+y = LinRange(0, pi, 100)
+z = sin.(x') .+ cos.(y)
+heatmap(z)
 
+##
 using StatsPlots
 histogram(rand(100))
 
 ##
-
 using DataFrames, CSV
 df = DataFrame(A = 1:4, B = ["M", "F", "F", "M"])
 CSV.write("example.csv", df)
@@ -18,7 +23,6 @@ df = CSV.read("example.csv")
 run(`rm example.csv`)
 
 ##
-
 using JLD2, FileIO
 hello = "world"
 foo = :bar
