@@ -1,12 +1,7 @@
 
 ##
-using PyPlot
 
-plt.clf()
-x = range(0; stop = 2 * pi, length = 1000); y = sin.(3 * x + 4 * cos.(2 * x));
-plt.plot(x, y, color = "red", linewidth = 2.0, linestyle = "--")
-plt.title("A sinusoidally modulated sinusoid")
-plt.gcf()
+include("snoop-Plots.jl")
 
 ##
 using DataFrames, CSV

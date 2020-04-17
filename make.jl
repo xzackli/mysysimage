@@ -1,12 +1,12 @@
 #!/usr/bin/env julia 
 
-using Pkg
+import Pkg
 Pkg.add("PackageCompiler")
 using PackageCompiler
 
 packages = [
     :Revise, :OhMyREPL, :IJulia,
-    :PyPlot,
+    :PyCall, :PyPlot,
     :FileIO, :JLD2, :CSV, :DataFrames
 ]
 
@@ -14,7 +14,14 @@ Pkg.update()
 for package in packages
     Pkg.add(string(package))
 end
-Pkg.precompile()
+
+# add in the current python using the output of `which python`
+pythonbin = read(`which python`, String)
+pythonbin = replace(pythonbin, "\n" => "")
+ENV["PYTHON"] = pythonbin
+Pkg.build("PyCall")
+
+# Pkg.precompile()
 
 create_sysimage(
     packages; 
