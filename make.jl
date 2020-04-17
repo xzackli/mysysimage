@@ -21,6 +21,7 @@ pythonbin = replace(pythonbin, "\n" => "")
 ENV["PYTHON"] = pythonbin
 Pkg.build("PyCall")
 
+println("Python ", ENV["PYTHON"])
 # Pkg.precompile()
 
 create_sysimage(
