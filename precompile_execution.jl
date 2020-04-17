@@ -1,19 +1,13 @@
 
 ##
-using Plots
-x = 1:0.1:10; y = sin.(x);
-plot(x, y)
+using PyPlot
+const plt = PyPlot
 
-##
-using Plots
-x = LinRange(-2, 2, 150)
-y = LinRange(0, pi, 100)
-z = sin.(x') .+ cos.(y)
-heatmap(z)
-
-##
-using StatsPlots
-histogram(rand(100))
+plt.clf()
+x = range(0; stop = 2 * pi, length = 1000); y = sin.(3 * x + 4 * cos.(2 * x));
+plt.plot(x, y, color = "red", linewidth = 2.0, linestyle = "--")
+plt.title("A sinusoidally modulated sinusoid")
+plt.gcf()
 
 ##
 using DataFrames, CSV

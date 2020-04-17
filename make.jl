@@ -6,7 +6,7 @@ using PackageCompiler
 
 packages = [
     :Revise, :OhMyREPL, :IJulia,
-    :Plots, :StatsPlots, 
+    :PyPlot,
     :FileIO, :JLD2, :CSV, :DataFrames
 ]
 
