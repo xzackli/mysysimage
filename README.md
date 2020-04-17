@@ -2,6 +2,8 @@
 
 My `settings.json`. I put this repository in `$HOME/Projects`.
 
+Run `julia make.jl`. It will choose the Python for PyCall that `which python` returns.
+
 ```json
 {
   "julia.enableTelemetry": true,
