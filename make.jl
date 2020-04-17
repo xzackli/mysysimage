@@ -5,7 +5,7 @@ Pkg.add("PackageCompiler")
 using PackageCompiler
 
 packages = [
-    :Revise, :OhMyREPL, 
+    :Revise, :OhMyREPL, :IJulia,
     :Plots, :StatsPlots, 
     :FileIO, :JLD2, :CSV, :DataFrames
 ]
@@ -14,7 +14,7 @@ Pkg.update()
 for package in packages
     Pkg.add(string(package))
 end
-# Pkg.precompile()
+Pkg.precompile()
 
 create_sysimage(
     packages; 
