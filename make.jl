@@ -5,7 +5,7 @@ Pkg.add("PackageCompiler")
 using PackageCompiler
 
 packages = [
-    :Revise, :OhMyREPL, :IJulia,
+    :Revise, :OhMyREPL,
     :PyCall, :PyPlot,
     :FileIO, :JLD2, :CSV, :DataFrames
 ]
