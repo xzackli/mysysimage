@@ -1,0 +1,78 @@
+backend: Qt5Agg
+
+
+font.family : Cochineal
+font.size: 18
+# font.weight: medium
+#font.family: Latin Modern Roman
+mathtext.fontset:cm
+#mathtext.fontset: custom
+#mathtext.rm: Cochineal
+#mathtext.it: Cochineal:italic
+#mathtext.bf: Cochineal:bold
+#mathtext.cursive: Cochineal
+
+text.usetex: False
+
+
+# styles
+lines.linestyle        : -       # solid line
+lines.color            : 666666    # has no affect on plot(); see axes.color_cycle
+lines.marker           : .    # the default marker
+lines.markeredgewidth  : 0.     # the line width around the marker symbol
+lines.markersize       : 8           # markersize, in points
+patch.facecolor        : 666666
+patch.edgecolor        : none
+
+# figure and axes
+figure.figsize: 8, 4.94427191
+figure.facecolor: w
+figure.edgecolor: ffffff
+
+figure.dpi: 200
+savefig.dpi: 200
+
+# line widths
+lines.linewidth   : 2    ## line width in points
+patch.linewidth   : 2
+
+
+axes.facecolor: ffffff
+axes.edgecolor: 333333
+axes.formatter.limits: -7, 10  # scientific notation limits
+axes.titlesize: 26
+axes.labelsize: 22
+xtick.labelsize: 18
+ytick.labelsize: 18
+
+scatter.marker : .
+
+
+# legend
+legend.fontsize: 18
+legend.frameon: False
+
+# ticks
+xtick.major.width: 1.
+ytick.major.width: 1.
+xtick.color: 222222
+ytick.color: 222222
+xtick.direction: in
+ytick.direction: in
+xtick.major.size: 8      # major tick size in points
+xtick.minor.size: 4      # minor tick size in points
+ytick.major.size: 8      # major tick size in points
+ytick.minor.size: 4      # minor tick size in points
+
+xtick.top: True
+ytick.right: True
+
+# the grid
+grid.color: cccccc   # grid color
+grid.linestyle: -
+grid.linewidth: 0.75     # in points
+
+# seaborn colorblind palette
+axes.prop_cycle: cycler('color', ['000000', 'E69F00', '56B4E9', '009E73', 'F0E442', '0072B2', 'D55E00', 'CC79A7'])
+
+image.cmap: magma
