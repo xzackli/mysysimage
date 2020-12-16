@@ -9,3 +9,10 @@ To install the IJulia kernel, it can be convenient to run
 using IJulia
 installkernel("Julia sysimg", "--sysimage=/home/zequnl/Projects/mysysimage/mysys.dylib")
 ```
+
+On my windows machine:
+
+```julia
+using IJulia
+installkernel("Julia sysimg", "-J/home/zequnl/src/mysysimage/mysys.dylib")
+```

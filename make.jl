@@ -21,12 +21,12 @@ packages = [
 # ENV["PYTHON"] = pythonbin
 # Pkg.build("PyCall")
 # println("Python ", ENV["PYTHON"])
-# Pkg.precompile()
+Pkg.precompile()
 
 create_sysimage(
     packages; 
     precompile_statements_file = "precompile_statements.jl",
-    precompile_execution_file = "precompile_execution.jl", 
+    # precompile_execution_file = "precompile_execution.jl", 
     sysimage_path = "mysys.dylib",
     script = "script.jl"
 )
