@@ -7,7 +7,7 @@ using PackageCompiler
 packages = [
     :Revise, :OhMyREPL,
     :PyCall, :IJulia, :PyPlot,
-    # :FileIO, :JLD2, :CSV, :DataFrames
+    :FileIO, :JLD2, :CSV, :DataFrames
 ]
 
 # Pkg.update()
@@ -16,11 +16,11 @@ packages = [
 # end
 
 # add in the current python using the output of `which python`
-# pythonbin = read(`which python`, String)
-# pythonbin = replace(pythonbin, "\n" => "")
-# ENV["PYTHON"] = pythonbin
-# Pkg.build("PyCall")
-# println("Python ", ENV["PYTHON"])
+pythonbin = read(`which python`, String)
+pythonbin = replace(pythonbin, "\n" => "")
+ENV["PYTHON"] = pythonbin
+Pkg.build("PyCall")
+println("Python ", ENV["PYTHON"])
 Pkg.precompile()
 
 create_sysimage(
