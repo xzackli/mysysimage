@@ -1,4 +1,4 @@
-#!/usr/bin/env julia 
+#!/usr/bin/env julia
 
 import Pkg
 Pkg.add("PackageCompiler")
@@ -23,10 +23,18 @@ Pkg.build("PyCall")
 println("Python ", ENV["PYTHON"])
 Pkg.precompile()
 
+# create_sysimage(
+#     packages;
+#     precompile_statements_file = "precompile_statements.jl",
+#     # precompile_execution_file = "precompile_execution.jl",
+#     sysimage_path = "mysys.dylib",
+#     script = "script.jl"
+# )
+
+# also make a kernel for vscode
 create_sysimage(
-    packages; 
+    packages;
     precompile_statements_file = "precompile_statements.jl",
-    # precompile_execution_file = "precompile_execution.jl", 
-    sysimage_path = "mysys.dylib",
-    script = "script.jl"
+    sysimage_path = "mysys_vscode.dylib",
+    script = "script_vscode.jl"
 )

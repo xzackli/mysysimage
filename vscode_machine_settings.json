@@ -1,0 +1,9 @@
+{
+    "autoDocstring.docstringFormat": "numpy",
+    "julia.executablePath": "/home/zequnl/Installs/bin/julia-1.5.3/bin/julia",
+    "julia.NumThreads": 16,
+    "julia.additionalArgs": [
+        "--sysimage=${env:HOME}/Projects/mysysimage/mysys_vscode.dylib"
+    ],
+    "editor.formatOnPaste": true
+}
