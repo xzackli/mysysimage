@@ -1,0 +1,24 @@
+{
+	// Place your snippets for julia here. Each snippet is defined under a snippet name and has a prefix, body and 
+	// description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the 
+	// same ids are connected.
+	// Example:
+	// "Print to console": {
+	// 	"prefix": "log",
+	// 	"body": [
+	// 		"console.log('$1');",
+	// 		"$2"
+	// 	],
+	// 	"description": "Log output to console"
+	// }
+
+	"Julia docstring": {
+		"prefix": "_docstring",
+		"body": [
+		  "\"\"\"\n\t${1:func(...)}\n\n# Arguments:\n- `array::MyArray{T}`: the array to search\n- `val::T`: the value to search for\n\n# Keywords\n- `verbose::Bool=true`: print out progress details\n\n# Returns: \n- `Int`: the index where `val` is located in the `array`\n\n# Examples\n```julia-repl\njulia> rand(Int, 2)\n```\n\"\"\""
+		],
+		"description": "Julia docstring - Blue style"
+	  }
+
+}
