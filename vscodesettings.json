@@ -1,8 +1,36 @@
 {
-  "julia.enableTelemetry": true,
-  "julia.executablePath": "/home/zequnl/bin/julia-1.5.3/bin/julia",
-  "julia.NumThreads": 6,
-  "julia.additionalArgs": [
-    "--sysimage=${env:HOME}/src/mysysimage/mysys.dylib"
-  ]
+    "[julia]": {
+        "editor.fontFamily": "Iosevka Custom, 'Courier New', monospace",
+        "editor.fontLigatures": true,
+        "editor.fontWeight": 400,
+
+        "editor.detectIndentation": false,
+        "editor.insertSpaces": true,
+        "editor.tabSize": 4,
+        "files.insertFinalNewline": true,
+        "files.trimFinalNewlines": true,
+        "files.trimTrailingWhitespace": true,
+        "editor.formatOnPaste": true
+        // "editor.rulers": [92],
+    },
+    "workbench.colorTheme": "Solarized Light",
+    "workbench.colorCustomizations": {
+        "editorIndentGuide.background": "#dfd9c6"
+    },
+    "workbench.iconTheme": "Monokai Pro Icons",
+    "editor.fontFamily": "Iosevka Custom, Consolas, 'Courier New', monospace",
+    "remote.SSH.remotePlatform": {
+        "della.princeton.edu": "linux",
+        "brahe.astro.princeton.edu": "linux"
+    },
+    "git.ignoreLegacyWarning": true,
+    "julia.enableTelemetry": true,
+    "python.dataScience.askForKernelRestart": false,
+    "window.zoomLevel": 0,
+    "terminal.integrated.commandsToSkipShell": [
+        "language-julia.interrupt"
+    ],
+    "jupyter.askForKernelRestart": false,
+    "jupyter.interactiveWindowMode": "perFile",
+    "terminal.integrated.inheritEnv": false,
 }
