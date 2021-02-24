@@ -1,17 +1,9 @@
 backend: Qt5Agg
 
-
-font.family : Cochineal
+font.family: Fira Math
+mathtext.fontset: custom
 font.size: 18
-# font.weight: medium
-#font.family: Latin Modern Roman
-mathtext.fontset:cm
-#mathtext.fontset: custom
-#mathtext.rm: Cochineal
-#mathtext.it: Cochineal:italic
-#mathtext.bf: Cochineal:bold
-#mathtext.cursive: Cochineal
-
+font.cursive: Fira Math
 text.usetex: False
 
 
