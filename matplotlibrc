@@ -1,12 +1,12 @@
-backend: Agg
+backend: pgf
 backend_fallback: True
 
 font.family: sans-serif
-font.sans-serif: cm
-
+font.sans-serif: Fira Math
 font.size: 18
-text.usetex: True
-text.latex.preamble: \usepackage[cm]{sfmath}
+# font.sans-serif: cm
+# text.usetex: True
+# text.latex.preamble: \usepackage[cm]{sfmath}
 
 # styles
 lines.linestyle        : -       # solid line
