@@ -1,11 +1,12 @@
-backend: Qt5Agg
+backend: Agg
+backend_fallback: True
 
-font.family: Fira Math
-mathtext.fontset: custom
+font.family: sans-serif
+font.sans-serif: cm
+
 font.size: 18
-font.cursive: Fira Math
-text.usetex: False
-
+text.usetex: True
+text.latex.preamble: \usepackage[cm]{sfmath}
 
 # styles
 lines.linestyle        : -       # solid line
