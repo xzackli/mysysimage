@@ -1,29 +1,9 @@
+using LaTeXStrings
+using Plots
 
-##
-using PyCall
-np = pyimport("numpy")
-using PyPlot
-const plt = PyPlot
-
-plt.clf()
-x = range(0; stop = 2 * pi, length = 1000); y = sin.(3 * x + 4 * cos.(2 * x));
-plt.plot(x, y, color = "red", linewidth = 2.0, linestyle = "--")
-plt.title("A sinusoidally modulated sinusoid")
-plt.xlabel("Modulated"); plt.ylabel("Modulation")
-plt.gcf()
-
-# ##
-# using DataFrames, CSV
-# df = DataFrame(A = 1:4, B = ["M", "F", "F", "M"])
-# CSV.write("example.csv", df)
-# df = CSV.read("example.csv")
-# run(`rm example.csv`)
-
-# ##
-# using JLD2, FileIO
-# hello = "world"
-# foo = :bar
-# bar = [1.0, 2.0, 5.0]
-# @save "example.jld2" hello foo bar
-# run(`rm example.jld2`)
-
+x = 0:0.01:4.0
+y = sin.(x) .* exp.(x) .+ 0.1
+p = plot(x, y, label="polarization", legend=:bottomleft)
+plot!(x, y .* 2, label="temperature")
+xlabel!(L"\textrm{Multipole moment, }\ell")
+ylabel!(L"\textrm{Beam } B_{\!\ell}")
