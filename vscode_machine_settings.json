@@ -1,9 +1,10 @@
 {
-    "autoDocstring.docstringFormat": "numpy",
-    "julia.executablePath": "/home/zequnl/Installs/bin/julia-1.5.3/bin/julia",
-    "julia.NumThreads": 16,
-    "julia.additionalArgs": [
-        "--sysimage=${env:HOME}/Projects/mysysimage/mysys_vscode.dylib"
-    ],
-    "editor.formatOnPaste": true
+  "julia.enableTelemetry": true,
+  "julia.executablePath": "/home/zequnl/bin/julia-1.6.0-rc3/bin/julia",
+  "julia.NumThreads": 6,
+  "julia.additionalArgs": [
+    "--sysimage=${env:HOME}/src/mysysimage/mysys.dylib",
+    // "--trace-compile=precompile_statements.jl"
+  ],
+  "jupyter.alwaysTrustNotebooks": true
 }
