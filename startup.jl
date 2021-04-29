@@ -1,26 +1,21 @@
 ENV["JULIA_REVISE_POLL"] = "1"
-ENV["PLOTS_DEFAULT_BACKEND"] = "GR"
-ENV["GKSwstype"]="nul"
-
-if length(ENV["PATH"]) > 0
-    ENV["PATH"]="/usr/local/texlive/2020/bin/x86_64-linux:"*ENV["PATH"]
-else
-    ENV["PATH"]="/usr/local/texlive/2020/bin/x86_64-linux:"
-end
-
-const PLOTS_DEFAULTS = Dict(
-    :theme=>:default,
-    :palette=>:seaborn_colorblind,
-    :fontfamily => "Computer Modern",
-		:linewidth=>1.5, :dpi=>150, :size=>(400,250),
-		:grid=>false, :frame=>:box, :foreground_color_legend=>nothing,
-		:legendfontsize=>10
-        )
 
 using Revise
 using OhMyREPL
+
+
+ENV["PLOTS_DEFAULT_BACKEND"] = "GR"
+ENV["GKSwstype"]="nul"
 using Plots
+using Plots.PlotMeasures: mm
+
+default(
+    fontfamily = "Computer Modern", linewidth=1.5, label="",
+    titlefontsize=(16+8), guidefontsize=(11+5), 
+    tickfontsize=(8+4), legendfontsize=(8+4),
+    left_margin=5mm, right_margin=5mm)
+
 
 enable_autocomplete_brackets(false)
-user_defaults = Plots._plots_defaults()
-Plots.theme(pop!(user_defaults, :theme); user_defaults...)
+# user_defaults = Plots._plots_defaults()
+# Plots.theme(pop!(user_defaults, :theme); user_defaults...)
