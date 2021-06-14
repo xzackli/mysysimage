@@ -19,6 +19,12 @@ installkernel("Julia sysimg", "-J/home/zequnl/src/mysysimage/mysys.dylib", env=D
 ```
 
 
+On Della,
+```julia
+using IJulia
+installkernel("Julia sysimg 40t", "--sysimage=/home/zequnl/Projects/mysysimage/mysys.dylib", env=Dict("JULIA_NUM_THREADS"=>"40", "JULIA_REVISE_POLL"=>"1"))
+```
+
 ### Aliases
 
 ```bash
