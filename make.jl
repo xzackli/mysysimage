@@ -4,16 +4,12 @@ import Pkg
 Pkg.add("PackageCompiler")
 using PackageCompiler
 
+
 packages = [
     :Revise, :OhMyREPL,
     :LaTeXStrings, :Plots
     # :FileIO, :JLD2, :DataFrames
 ]
-
-Pkg.update()
-for package in packages
-    Pkg.add(string(package))
-end
 
 
 create_sysimage(
