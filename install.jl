@@ -6,7 +6,8 @@ using PackageCompiler
 packages = [
     :Revise, :OhMyREPL,
     :LaTeXStrings, :Plots,
-    :FileIO, :JLD2, :DataFrames
+    :FileIO, :JLD2, :DataFrames,
+    :CSV, :BenchmarkTools
 ]
 
 Pkg.update()
