@@ -7,7 +7,8 @@ packages = [
     :Revise, :OhMyREPL,
     :LaTeXStrings, :Plots,
     :FileIO, :JLD2, :DataFrames,
-    :CSV, :BenchmarkTools
+    :CSV, :BenchmarkTools,
+    :StaticArrays, :CairoMakie
 ]
 
 Pkg.update()
@@ -28,7 +29,4 @@ pythonbin = replace(pythonbin, "\n" => "")
 ENV["PYTHON"] = pythonbin
 Pkg.build("PyCall")
 println("Python ", ENV["PYTHON"])
-
-
-Pkg.precompile()
 

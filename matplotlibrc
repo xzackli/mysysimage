@@ -2,7 +2,13 @@ backend: pgf
 backend_fallback: True
 
 font.family: sans-serif
-font.sans-serif: Fira Math
+font.sans-serif: Fira Sans
+mathtext.fontset: custom
+mathtext.rm: Fira Math:regular
+mathtext.bf: Fira Math:medium
+mathtext.sf: Fira Math
+mathtext.it: Fira Math:regular:italic
+mathtext.tt: Fira Mono
 font.size: 18
 # font.sans-serif: cm
 # text.usetex: True
