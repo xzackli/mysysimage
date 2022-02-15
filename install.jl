@@ -5,7 +5,7 @@ using PackageCompiler
 
 packages = [
     :Revise, :OhMyREPL,
-    :LaTeXStrings, :Plots,
+    :LaTeXStrings, :Plots, :IJulia, :PyPlot,
     :FileIO, :JLD2, :DataFrames,
     :CSV, :BenchmarkTools,
     :StaticArrays, :CairoMakie
