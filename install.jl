@@ -8,7 +8,7 @@ packages = [
     :LaTeXStrings, :Plots, :IJulia, :PyPlot,
     :FileIO, :JLD2, :DataFrames,
     :CSV, :BenchmarkTools,
-    :StaticArrays, :CairoMakie
+    :StaticArrays
 ]
 
 Pkg.update()
