@@ -2,14 +2,14 @@ backend: pgf
 backend_fallback: True
 
 font.family: sans-serif
-font.sans-serif: Fira Sans
+font.sans-serif: Fira Sans Condensed
 mathtext.fontset: custom
 mathtext.rm: Fira Math:regular
 mathtext.bf: Fira Math:medium
 mathtext.sf: Fira Math
 mathtext.it: Fira Math:regular:italic
-mathtext.tt: Fira Mono
-font.size: 18
+mathtext.tt: Fira Code
+font.size: 16
 # font.sans-serif: cm
 # text.usetex: True
 # text.latex.preamble: \usepackage[cm]{sfmath}
