@@ -15,7 +15,7 @@ default(
     dpi=200,
     linewidth=1.5, label="",
     titlefontsize=(16+8), guidefontsize=(12+4), 
-    tickfontsize=(8+4), legendfontsize=(12+4),
+    tickfontsize=(8+2), legendfontsize=(12+4),
     left_margin=15mm, right_margin=20mm, 
     top_margin=20mm, bottom_margin=15mm)
 
