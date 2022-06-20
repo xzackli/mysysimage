@@ -3,7 +3,7 @@
   "julia.executablePath": "/home/zequnl/bin/julia-1.6.0-rc3/bin/julia",
   "julia.NumThreads": 6,
   "julia.additionalArgs": [
-    "--sysimage=${env:HOME}/src/mysysimage/mysys.dylib",
+    "--sysimage=${env:HOME}/src/mysysimage/mysys.so",
     // "--trace-compile=precompile_statements.jl"
   ],
   "jupyter.alwaysTrustNotebooks": true

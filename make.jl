@@ -20,6 +20,6 @@ create_sysimage(
     packages;
     precompile_statements_file = "precompile_statements.jl",
     precompile_execution_file = "precompile_execution.jl",
-    sysimage_path = "mysys.dylib",
+    sysimage_path = "mysys.so",
     # script = "script.jl"
 )
