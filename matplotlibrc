@@ -24,7 +24,6 @@ axes.edgecolor: 414043
 
 font.weight: medium
 axes.labelweight: medium
-legend.labelweight: medium
 mathtext.default: bf
 
 axes.spines.right: False
