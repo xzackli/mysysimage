@@ -1,54 +1,94 @@
-backend: pgf
+backend: agg
 backend_fallback: True
 
 font.family: sans-serif
-font.sans-serif: Fira Sans Condensed
-mathtext.fontset: custom
-mathtext.rm: Fira Math:regular
-mathtext.bf: Fira Math:medium
-mathtext.sf: Fira Math
-mathtext.it: Fira Math:regular:italic
-mathtext.tt: Fira Code
 font.size: 16
+# font.sans-serif: TeX Gyre Heros
+font.sans-serif: Neue Haas Grotesk Text Pro
+mathtext.fontset: custom
+mathtext.rm: TeX Gyre Heros
+mathtext.bf: TeX Gyre Heros:bold
+mathtext.sf: TeX Gyre Heros
+mathtext.it: TeX Gyre Heros:italic
+mathtext.tt: TeX Gyre Heros
+mathtext.cal: TeX Gyre Heros
+
+text.color: 414043
+axes.labelcolor: 414043
+legend.labelcolor: 414043
+xtick.color: 414043
+ytick.color: 414043
+xtick.labelcolor: 414043
+ytick.labelcolor: 414043
+axes.edgecolor: 414043
+
+font.weight: medium
+axes.labelweight: medium
+legend.labelweight: medium
+mathtext.default: bf
+
+axes.spines.right: False
+axes.spines.top: False
+ytick.major.right: False
+xtick.major.top: False
+ytick.minor.right: False
+xtick.minor.top: False
+
+
+# mathtext.rm: Myriad Math:regular
+# mathtext.bf: Clato Math:bold
+# mathtext.sf: Myriad Math
+# mathtext.it: Clato Math:regular:italic
+# mathtext.tt: Fira Code
+# font.size: 16
+# font.stretch: condensed
 # font.sans-serif: cm
 # text.usetex: True
-# text.latex.preamble: \usepackage[cm]{sfmath}
+# pgf.texsystem: xelatex
+# pgf.rcfonts: True
+# pgf.preamble: \usepackage{amsmath} \boldmath
+# text.latex.preamble: 
 
 # styles
 lines.linestyle        : -       # solid line
 lines.color            : 666666    # has no affect on plot(); see axes.color_cycle
-lines.marker           : .    # the default marker
-lines.markeredgewidth  : 0.     # the line width around the marker symbol
-lines.markersize       : 8           # markersize, in points
-patch.facecolor        : 666666
-patch.edgecolor        : none
+# lines.marker           : .    # the default marker
+# lines.markeredgewidth  : 0.     # the line width around the marker symbol
+# lines.markersize       : 8           # markersize, in points
+# patch.facecolor        : 666666
+# patch.edgecolor        : none
+
+# text.size: 16
+# text.color: 333333
 
 # figure and axes
-figure.figsize: 8, 4.94427191
-figure.facecolor: w
-figure.edgecolor: ffffff
+figure.figsize: 7, 4.32623792125
+figure.autolayout : True
+# figure.facecolor: ffffff
+# figure.edgecolor: ffffff
 
-figure.dpi: 200
-savefig.dpi: 200
+figure.dpi: 150
+savefig.dpi: 150
 
 # line widths
-lines.linewidth   : 2    ## line width in points
-patch.linewidth   : 2
+lines.linewidth   : 3    ## line width in points
+# patch.linewidth   : 2
 
 
-axes.facecolor: ffffff
-axes.edgecolor: 333333
+# axes.facecolor: ffffff
+# axes.edgecolor: 333333
 axes.formatter.limits: -7, 10  # scientific notation limits
-axes.titlesize: 26
-axes.labelsize: 22
-xtick.labelsize: 18
-ytick.labelsize: 18
+axes.titlesize: 22
+axes.labelsize: 18
+axes.labelpad: 10
+xtick.labelsize: 12
+ytick.labelsize: 12
 
 scatter.marker : .
 
 
 # legend
-legend.fontsize: 18
+legend.fontsize: 14
 legend.frameon: False
 
 # ticks
@@ -72,6 +112,7 @@ grid.linestyle: -
 grid.linewidth: 0.75     # in points
 
 # seaborn colorblind palette
-axes.prop_cycle: cycler('color', ['000000', 'E69F00', '56B4E9', '009E73', 'F0E442', '0072B2', 'D55E00', 'CC79A7'])
-
+# axes.prop_cycle: cycler('color', ['006BA4', 'FF800E', '595959', 'ABABAB', '5F9ED1', 'C85200', '898989', 'A2C8EC', 'FFBC79', 'CFCFCF'])
+axes.prop_cycle: cycler('color', ['6388b4', 'ef6f6a', '55ad89', '8cc2ca', 'ffae34',  'c3bc3f', 'bb7693', 'baa094', 'a9b5ae', '767676'])
+# axes.prop_cycle: cycler('color', ['4f6980', '849db1', 'a2ceaa', '638b66', 'bfbb60', 'f47942', 'fbb04e', 'b66353'])
 image.cmap: magma
